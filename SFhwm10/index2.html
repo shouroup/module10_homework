@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Size Button</title>
+</head>
+<body>
+  <button id="screenSizeButton">Show Screen Size</button>
+
+  <script>
+    const screenSizeButton = document.getElementById('screenSizeButton');
+
+    screenSizeButton.addEventListener('click', () => {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      const screenSizeInfo = `Screen Width: ${screenWidth}px\nScreen Height: ${screenHeight}px`;
+      alert(screenSizeInfo);
+    });
+  </script>
+</body>
+</html> 
